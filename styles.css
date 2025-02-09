@@ -1,0 +1,26 @@
+.expandable {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    user-select: none;
+}
+.expandable:hover {
+    background-color: #f9f9f9;
+}
+.content {
+    padding: 0 0 10px 20px;
+    display: none;
+}
+
+.music img {
+    max-width: 50px; /* 音乐图片的最大宽度，根据需要调整 */
+    max-height: 50px; /* 音乐图片的最大高度，根据需要调整 */
+    border-radius: 75px; /* 圆角 */
+}
+
+.music audio {
+    width: 100%; /* 音乐播放器宽度 */
+    margin-top: 10px;
+}
+
+

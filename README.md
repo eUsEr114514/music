@@ -1,1 +1,2 @@
-一个存放音乐的仓库，输入域名加文件名直接听歌
+# PERSONAL USE!  
+This project belong to myself(convenience)
