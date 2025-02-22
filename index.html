@@ -1,158 +1,223 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MUSIC</title>
-    <link rel="stylesheet" href="/styles.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片音频展示</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>音频可能需要点时间加载，稍等一会即可（不超过半分钟）</h1>
-<div class="expandable">Japanese（点击）</div>
-<div class="content">
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/idol.jpg" alt="专辑图片">
-        <p>アイドル - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/idol.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+<div class="grid-container">
+    <!-- 复制以下区块创建多个方框 -->
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/idol.jpg" alt="アイドル - YOASOBI">
+        <div class="hover-text">アイドル - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/idol.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/monster.png" alt="专辑图片">
-        <p>怪物 - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/monster.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/monster.png" alt="怪物 - YOASOBI">
+        <div class="hover-text">怪物 - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/monster.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/yorunikakeru.png" alt="专辑图片">
-        <p>夜に駆ける - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/yorunikakeru.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/yorunikakeru.png" alt="夜に駆ける - YOASOBI">
+        <div class="hover-text">夜に駆ける - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/yorunikakeru.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/syukuhuku.png" alt="专辑图片">
-        <p>祝福 - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/syukuhuku.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/syukuhuku.png" alt="祝福 - YOASOBI">
+        <div class="hover-text">祝福 - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/syukuhuku.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/tabun.png" alt="专辑图片">
-        <p>たぶん - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/tabun.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/tabun.png" alt="たぶん - YOASOBI">
+        <div class="hover-text">たぶん - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/tabun.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/haruzion.png" alt="专辑图片">
-        <p>ハルジオン - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/haruzion.mp3" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/haruzion.png" alt="ハルジオン - YOASOBI">
+        <div class="hover-text">ハルジオン - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/haruzion.mp3" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/anko-ru.png" alt="专辑图片">
-        <p>アンコール - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/anko-ru.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/anko-ru.png" alt="アンコール - YOASOBI">
+        <div class="hover-text">アンコール - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/anko-ru.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/moshimo.png" alt="专辑图片">
-        <p>もしも命が描けたら - YOASOBI</p>
-        <audio controls>
-            <source src="Japanese/moshimo.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/moshimo.png" alt="もしも命が描けたら - YOASOBI">
+        <div class="hover-text">もしも命が描けたら - YOASOBI</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/moshimo.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/ban.png" alt="专辑图片">
-        <p>绊 - Nightcore.Shiro</p>
-        <audio controls>
-            <source src="Japanese/ban.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/ban.png" alt="绊 - Nightcore.Shiro">
+        <div class="hover-text">绊 - Nightcore.Shiro</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/ban.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/CryForMe.png" alt="专辑图片">
-        <p>Cry For Me - michita</p>
-        <audio controls>
-            <source src="Japanese/CryForMe.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/CryForMe.png" alt="Cry For Me - michita">
+        <div class="hover-text">Cry For Me - michita</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/CryForMe.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/dakarabokuwa.png" alt="专辑图片">
-        <p>だから僕は音楽を辞めた - ヨルシカ</p>
-        <audio controls>
-            <source src="Japanese/dakarabokuwa.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/dakarabokuwa.png" alt="だから僕は音楽を辞めた - ヨルシカ">
+        <div class="hover-text">だから僕は音楽を辞めた - ヨルシカ</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/dakarabokuwa.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/kaminomanimani.png" alt="专辑图片">
-        <p>神のまにまに - ワンダーランズ×ショウタイム</p>
-        <audio controls>
-            <source src="Japanese/kaminomanimani.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/kaminomanimani.png" alt="神のまにまに - ワンダーランズ×ショウタイム">
+        <div class="hover-text">神のまにまに - ワンダーランズ×ショウタイム</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/kaminomanimani.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/OneLastKiss.png" alt="专辑图片">
-        <p>One Last Kiss - 宇多田光</p>
-        <audio controls>
-            <source src="Japanese/OneLastKiss.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/OneLastKiss.png" alt="One Last Kiss - 宇多田光">
+        <div class="hover-text">One Last Kiss - 宇多田光</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/OneLastKiss.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/OnlyMyRailgun.png" alt="专辑图片">
-        <p>Only My Railgun - fripSide</p>
-        <audio controls>
-            <source src="Japanese/OnlyMyRailgun.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/OnlyMyRailgun.png" alt="Only My Railgun - fripSide">
+        <div class="hover-text">Only My Railgun - fripSide</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/OnlyMyRailgun.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/phony.png" alt="专辑图片">
-        <p>phony - 初月</p>
-        <audio controls>
-            <source src="Japanese/phony.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/phony.png" alt="phony - 初月">
+        <div class="hover-text">phony - 初月</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/phony.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/tadaKiminomamade.png" alt="专辑图片">
-        <p>ただ、君のままで - Sou</p>
-        <audio controls>
-            <source src="Japanese/tadaKiminomamade.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/tadaKiminomamade.png" alt="ただ、君のままで - Sou">
+        <div class="hover-text">ただ、君のままで - Sou</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/tadaKiminomamade.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
-    <div class="music">
-        <img src="https://picture.electrondz75.sbs/MusicPage/taiyo-kei.png" alt="专辑图片">
-        <p>太陽系デスコ - ナユタン星人</p>
-        <audio controls>
-            <source src="Japanese/taiyo-kei.m4a" type="audio/mpeg">
-            <!-- Your browser does not support the audio element. -->
-        </audio>
+    <div class="box" data-audio="audio-url.mp3">
+        <img src="https://picture.electrondz75.sbs/MusicPage/taiyo-kei.png" alt="太陽系デスコ - ナユタン星人">
+        <div class="hover-text">太陽系デスコ - ナユタン星人</div> <!-- 新增 -->
+        <div class="audio-player">
+            <p></p>
+            <audio controls style="width: 100%">
+                <source src="Japanese/taiyo-kei.m4a" type="audio/mpeg">
+                您的浏览器不支持音频播放
+            </audio>
+            <button class="close-btn">关闭</button>
+        </div>
     </div>
+
 </div>
 
-</body>
+<div class="overlay"></div>
 
 <script src="script.js"></script>
-
+</body>
 </html>
